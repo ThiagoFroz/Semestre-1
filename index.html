@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GreenClean</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="shortcut icon" href="/img/recycling_24dp_FILL0_wght400_GRAD0_opsz24 (1).png" type="image/x-icon">
+</head>
+
+<body>
+    <header>
+        <div id="logo">
+            <h1>GreenClean</h1>
+        </div>
+        <button id="openMenu">☰</button>
+    </header>
+
+    <nav>
+        <button id="closeMenu">×</button>
+        <a href="#quem-somos">Quem Somos</a>
+        <a href="#reciclagem">Reciclagem</a>
+    </nav>
+
+    <main>
+        <section id="quem-somos">
+            <h2>Quem somos?</h2>
+            <p>Todos do grupo são alunos da <abbr title="Universidade Paulista">UNIP</abbr> do curso de Ciência da Computação. Somos um grupo de amigos que se juntaram para fazer a <abbr title="Atividades Práticas Supervisionadas">APS</abbr>. Nos disseram que teríamos que desenvolver um site usando duas tecnologias: HTML e CSS.</p>
+        </section>
+
+        <section id="reciclagem">
+            <h2>Reciclagem</h2>
+            <h3>Introdução</h3>
+            <p>A reciclagem é um processo essencial para a sustentabilidade ambiental, pois permite a transformação de materiais descartados em novos produtos, reduzindo a necessidade de recursos naturais e minimizando os impactos ambientais.</p>
+
+            <h3>Benefícios da Reciclagem</h3>
+            <p>A reciclagem traz diversos benefícios, incluindo a redução da poluição, a conservação de recursos naturais, a economia de energia e a diminuição da quantidade de resíduos encaminhados para aterros sanitários.</p>
+
+            <h3>Tipos de Materiais Recicláveis</h3>
+            <h4>Papel e Papelão</h4>
+            <p>O papel e o papelão são materiais amplamente reciclados. A reciclagem desses materiais ajuda a preservar árvores e a economizar água e energia.</p>
+
+            <h4>Vidro</h4>
+            <p>O vidro é 100% reciclável e pode ser reciclado infinitamente sem perder a qualidade. A reciclagem do vidro reduz a extração de matérias-primas e o consumo de energia.</p>
+
+            <h4>Plástico</h4>
+            <p>Os plásticos são materiais versáteis e amplamente utilizados. A reciclagem de plásticos ajuda a reduzir a poluição ambiental e o consumo de petróleo.</p>
+
+            <h4>Metais</h4>
+            <p>Os metais, como alumínio e aço, podem ser reciclados inúmeras vezes. A reciclagem de metais economiza energia e recursos naturais.</p>
+
+            <h3>Como Reciclar Corretamente</h3>
+            <p>Para reciclar corretamente, é importante separar os materiais recicláveis dos orgânicos e dos resíduos não recicláveis. Além disso, é essencial limpar os materiais recicláveis antes de descartá-los nos pontos de coleta.</p>
+
+            <h3>Conclusão</h3>
+            <p>A reciclagem é uma prática fundamental para a preservação do meio ambiente e a construção de um futuro sustentável. Ao adotar hábitos de reciclagem, cada indivíduo pode contribuir significativamente para a redução dos impactos ambientais.</p>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2024 Grupo 11. Todos os direitos reservados.</p>
+    </footer>
+    
+    <script>
+        document.getElementById('openMenu').addEventListener('click', function() {
+            document.querySelector('nav').style.display = 'flex';
+            document.querySelector('nav').style.opacity = '1';
+        });
+        
+        document.getElementById('closeMenu').addEventListener('click', function() {
+            document.querySelector('nav').style.opacity = '0';
+            setTimeout(function() {
+                document.querySelector('nav').style.display = 'none';
+            }, 300);
+        });
+    </script>
+</body>
+</html>

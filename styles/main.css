@@ -1,0 +1,126 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Monda:wght@400;700&family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #333;
+    background-color: #f4f4f4;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4CAF50;
+    color: white;
+    width: 100%;
+    padding: 10px 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+header h1 {
+    margin: 0;
+}
+
+#openMenu, #closeMenu {
+    border: none;
+    background: none;
+    font-size: 30px;
+    font-weight: bold;
+    cursor: pointer;
+    display: none;
+    color: white;
+
+}
+
+nav {
+    background-color: #3f9242;
+    color: #fff;
+    width: 100%;
+    display: flex;
+    justify-content: right;
+    align-items: right;
+}
+
+nav a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 18px;
+}
+
+main {
+    max-width: 1200px;
+    margin: 20px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+}
+
+h2 {
+    margin-top: 20px;
+    color: #4CAF50;
+}
+
+h3, h4 {
+    margin-top: 15px;
+    color: #333;
+}
+
+p {
+    margin-top: 10px;
+    line-height: 1.6;
+}
+
+footer {
+    width: 100%;
+    background-color: #bdb7b7;
+    padding: 0px;
+    margin-bottom: 0;
+    margin-right: 0;
+    text-align: center;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+abbr[title] {
+    text-decoration: none; /* Remove o sublinhado pontilhado padrão */
+    border-bottom: 1px dotted #000; /* Adiciona uma borda inferior pontilhada personalizada */
+    cursor: help; /* Adiciona o cursor de ajuda para indicar que é uma abreviação */
+}
+
+abbr[title]:hover {
+    border-bottom: 1px solid #000; /* Muda a borda inferior para sólida ao passar o mouse */
+}
+
+
+@media only screen and (max-width: 768px) {
+    #openMenu, #closeMenu {
+        display: block;
+    }
+
+    nav {
+        display: none;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    nav a {
+        margin: 10px 0;
+    }
+}
